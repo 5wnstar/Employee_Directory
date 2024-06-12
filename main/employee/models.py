@@ -8,6 +8,5 @@ class Employee(models.Model):
     job_type =  models.CharField(max_length=250)
     image = models.ImageField(upload_to='employee')
     timestamp = models.DateTimeField(auto_now=True)
-
     def __str__(self):
         return self.first_name
